@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.project1</groupId>
 	<artifactId>employee</artifactId>
-	<packaging>war</packaging>	
+	<packaging>jar</packaging>	
 	<version>0.0.1-SNAPSHOT</version>	
 	<name>Employee_Management</name>
 	<description>Demo project for Spring Boot</description>
