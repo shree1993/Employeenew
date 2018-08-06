@@ -17,12 +17,12 @@ import org.springframework.web.client.RestTemplate;
 
 import com.project1.employee.exception.EmployeeNotFoundException;
 
-
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiResponses;
 
 @RestController
 @RequestMapping("/EmpMgt")
-@Api(value = "", description = "Operations about pets")
+@Api(value = "EmployeeDetails", description = "CRUD operations on employee details")
 public class EmployeeController {
 
 	@Autowired
@@ -32,11 +32,9 @@ public class EmployeeController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeController.class);
 
-//	@ApiResponses(values={
-//			code="200",description="ok",
-//			code=""
-//	})
-	@PostMapping(value = "/addEmp")
+//	@ApiResponses(value = { @ApiResponse(code = 200, message = "Employee added sucessfully"),
+//			@ApiResponse(code = 404, message = "Employee not found") })
+//	@PostMapping(value = "/addEmp")
 	public ResponseEntity<EmployeeStatus> addEmployee(@RequestBody EmployeeDetails empDetails)
 			throws EmployeeNotFoundException {
 		LOGGER.info("Adding Employee details");
@@ -90,6 +88,6 @@ public class EmployeeController {
 			throws EmployeeNotFoundException {
 		LOGGER.info("validate employee username and password");
 		empService.validateEmployee(userName, password);
-	}	
-	
+	}
+
 }

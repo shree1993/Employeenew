@@ -91,7 +91,7 @@ public class EmployeeControllerTest {
 //		List<EmployeeDetails> myList = Collections.<EmployeeDetails> emptyList();
 //		EmployeeDetails emp = new EmployeeDetails(new Long(0l), "Shweta", "123", "Shweta Shree", "shweta@gmail.com",
 //				"25/05/1993", "F", "abc", "fgfg");
-//		EmployeeDetails empStatus = new EmployeeDetails(new Long(0l), "Shweta", "123", "Shweta Shree", "shweta@gmail.com",
+//		EmployeeDetails emp1 = new EmployeeDetails(new Long(0l), "Shweta", "123", "Shweta Shree", "shweta@gmail.com",
 //				"25/05/1993", "F", "abc", "fgfg");
 //		JSONObject obj = new JSONObject();
 //		obj.put("statusMsg", "Employee inserted sucessfully");
@@ -108,9 +108,9 @@ public class EmployeeControllerTest {
 //		String expected = "{\"statusMsg\":\"Employee inserted sucessfully\",\"msg\":\"Success\",\"data\":[]}";
 //		JSONAssert.assertEquals(expected, result.getResponse().getContentAsString(), false);
 //	}
-	//
-	// @Test
-	// public void validateUser() {
-	//
-	// }
+	
+//	 @Test
+//	 public void validateUser() {
+//	
+//	 }
 }
